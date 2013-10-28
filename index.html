@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+  <title>Em Calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" href="iehacks.css" type="text/css">
+	<![endif]-->
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.plugins.js"></script>
+	<script type="text/javascript" src="emcalc.js"></script>
+	
+	<meta http-equiv="Description" content="Em Calculator is a small JavaScript tool which helps making scalable and accessible CSS design. It converts size in pixels to relative em units, which are based on a text size." />
+	<meta http-equiv="Keywords" content="em calculator calc pixel unit tool css design javascript jquery" />
+	
+</head>
+<body>
+
+<div id="static">
+	<div class="top">
+		<h1>Em Calculator</h1>
+		<p>ver 2.2</p>
+	</div>
+	<div id="panel">
+		<div id="about">
+			<h2>About</h2>
+			<p>Em Calculator is a small JavaScript tool which helps making scalable and accessible CSS design. It converts size in pixels to relative em units, which are based on a text size.</p>
+			<p><a id="more" href="#text">&rarr; More</a></p>
+		</div>
+		<div id="nojs">
+			<h2>JavaScript required</h2>
+			<p>I'm very sorry, but this page needs JavaScript enabled browser. If you happen to use tools like <a href="https://addons.mozilla.org/firefox/722/">NoScript</a>, turn them off please. If you still encounter problems, consider <a href="http://browsehappy.com/">upgrading your browser</a>.</p>
+		</div>
+		<div id="buzz">
+			<h2>More</h2>
+			<p><a href="https://github.com/riddle/emcalc">Fork me on GitHub</a></p>
+			<p>Enjoy EmCalc? <form style="padding-top:5px" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" syle="display:inline">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="BD8FXWSWHCQXN">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div id="ems">
+
+</div>
+
+
+<div id="text">
+	<h2>Changelog</h2>
+	<dl>
+		<dt>2.2</dt>
+		<dd>
+			<ul>
+				<li>Transition to session-oriented model. Saved data is placed in local storage (<code>window.globalStorage</code> or cookies)</li>
+				<li>Ability to turn on asking for newly created node names.</li>
+				<li>Layout changes in top panel.</li>
+				<li>Minor speed improvements.</li>
+				<li>Internet Explorer support (still buggy).</li>
+			</ul>			
+		</dd>
+		<dt>2.1</dt>
+		<dd>
+			<ul>
+				<li>Increment or decrement the number by <strong>one</strong> in text field by pressing <kbd>Up</kbd> / <kbd>Down</kbd> keys</li>
+				<li>Increment or decrement the number by <strong>ten</strong> in text field by pressing <kbd>PageUp</kbd> / <kbd>PageDown</kbd> keys</li>
+				<li>Save edited node name - click anywhere in the window (or press Enter like before)</li>
+				<li>Double-click on node name selects text within in Firefox</li>
+				<li>Click once on em value to select whole text</li>
+				<li>Negative px / em allowed</li>
+				<li>Minor CSS tweaks</li>
+				<li>Improved performance a bit</li>
+			</ul>
+		</dd>
+		<dt>2.0.1</dt>
+		<dd>
+			<ul>
+				<li>Fix to node name edit input</li>
+				<li>Minor CSS tweaks</li>
+			</ul>
+		</dd>
+		<dt>2.0</dt>
+		<dd>
+			<ul>
+				<li>Rewritten to jQuery</li>
+				<li>Saving settings in cookies</li>
+				<li>Better sibling insertion</li>
+				<li>Everything works on the fly, just start typing</li>
+				<li>Node name editing (double click)</li>
+				<li>New design</li>
+			</ul>
+		</dd>
+		<dt>1.0.2</dt>
+		<dd>
+			<ul>
+				<li>Opera fix to removing nodes</li>
+			</ul>
+		</dd>
+		<dt>1.0.1</dt>
+		<dd>
+			<ul>
+				<li>Removing nodes</li>
+			</ul>
+		</dd>
+		<dt>1.0</dt>
+		<dd>
+			<ul>
+				<li>First version</li>
+			</ul>
+		</dd>
+	</dl>
+	<h2>About</h2>
+	<p>Author: <a href="http://riddle.pl/">Piotr Petrus</a> ('Riddle'). Copyright &copy; 2007
+	<br /><a href="http://riddle.jogger.pl/2007/02/07/em-calculator-2-0/">Comments</a>?</p>
+</div>
+
+
+</body>
+</html>

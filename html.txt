@@ -1,0 +1,45 @@
+<div id="options">
+	<ul id="tabs">
+		<li><a href="#sessions">Sessions</a></li>
+		<li><a href="#settings">Settings</a></li>
+	</ul>
+	<form action="" id="sessions">
+		<fieldset>
+			<h2>Sessions</h2>
+			<ul id="sessionActions">
+				<li><input id="sessionSave" type="submit" value="Save" /></li>
+				<!--<li><input id="sessionRename" type="submit" value="Rename" /></li>-->
+				<li><input id="sessionDelete" type="submit" value="Delete" /></li>
+			</ul>
+			<div id="sessionList">
+				<select size="5">
+					<option class="new" value="new">New session</option>
+				</select>
+				<p>&uarr; Buggy on Opera &amp; Safari (work in progress)</p>
+			</div>
+		</fieldset>
+	</form>
+	<form action="" id="settings">
+		<fieldset>
+			<h2>Settings</h2>
+			<dl>
+				<dt>
+					<label for="fontSize">Default font size</label>
+				</dt>
+				<dd>
+					<input id="fontSize" type="text" size="2" maxlength="2" value="16" autocomplete="off" /> px
+				</dd>
+				<dt>
+					<label for="decimalPlaces">Decimal places</label>
+				</dt>
+				<dd>
+					<input id="decimalPlaces" type="text" size="2" maxlength="2" value="3" autocomplete="off" /> 
+				</dd>
+				<dd class="alone">
+					<label for="askNodeNames"><input id="askNodeNames" type="checkbox" /> Ask for node names</label>
+				</dd>
+				<dd class="alone"><input id="saveSettings" type="submit" value="Save" /></dd>
+			</dl>
+		</fieldset>
+	</form>
+</div>
